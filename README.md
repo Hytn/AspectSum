@@ -31,7 +31,7 @@ The following are descriptions of some fields
 * **sample_id**: `yyyy-id`, where `yyyy` is the year
 
 ## Training and Evaluation
-The training and verification codes are in `3_run_our_idea.py`, you can change the `pretrained_model_path` to replace different pre-trained models, and compare the learning effects of different models.
+The training and evaluation codes are in `3_run_our_idea.py`, you can change the `pretrained_model_path` to replace different pre-trained models, and compare the learning effects of different models.
 
 ## case study
 If you want to see the effect of different aspect learning, you can run `case_study.py`
