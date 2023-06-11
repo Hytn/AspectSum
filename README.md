@@ -40,8 +40,8 @@ If you want to see the effect of different aspect learning, you can run `case_st
 If you use the dataset, please consider citing with
 ```
 @article{chen2023ECML-PKDD,
-    title = {AnAspect-Guided JointLearning Generatorfor RecoveringAspect Informationin AbstractiveMulti-Document Summarization},
-    author = {Haotian Chen and Han Zhang and Houjing Guo and Shuchang Yi and Bingsheng Chen and Xiangdong Zhou},
+    title = {An Aspect-Guided Joint Learning Generator for Recovering Aspect Informationin Abstractive Multi-Document Summarization},
+    author = {Haotian Chen, Han Zhang, Houjing Guo, Shuchang Yi, Bingsheng Chen, Xiangdong Zhou},
     journal = {ECML-PKDD},
     month = {},
     url = {},
