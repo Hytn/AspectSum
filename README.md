@@ -37,14 +37,3 @@ The training and evaluation codes are in `3_run_our_idea.py`, you can change the
 If you want to see the effect of different aspect learning, you can run `case_study.py`
 
 ## Cite Us
-If you use the dataset, please consider citing with
-```
-@article{chen2023ECML-PKDD,
-    title = {An Aspect-Guided Joint Learning Generator for Recovering Aspect Informationin Abstractive Multi-Document Summarization},
-    author = {Haotian Chen, Han Zhang, Houjing Guo, Shuchang Yi, Bingsheng Chen, Xiangdong Zhou},
-    journal = {ECML-PKDD},
-    month = {},
-    url = {},
-    year = {2023}
-}
-```
