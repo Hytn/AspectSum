@@ -1,5 +1,5 @@
 # AspectSum
-Implementation of An Aspect-Guided Joint Learning Generator for Recovering Aspect Information in Abstractive Multi-Document Summarization
+Implementation of the paper Supervised Aspect Learning for Abstractive Multi-Document Summarization.
 
 ## Required Packages
 * Python (tested on 3.8.13)
@@ -9,12 +9,12 @@ Implementation of An Aspect-Guided Joint Learning Generator for Recovering Aspec
 * numpy (tested on 1.23.2)
 * tqdm
 
-## Dataset
+## Datasets
 The [MRED](https://arxiv.org/abs/2110.07474) dataset can be downloaded following the instructions at https://github.com/Shen-Chenhui/MReD
 The [WikiAsp](https://arxiv.org/abs/2011.07832) dataset can be downloaded following the instructions at https://github.com/neulab/wikiasp
 
 
-## Process data
+## Data Processing
 First, you should prepare the data and place them in the `raw_data`. Next process the data 
 ```bash
 python 1_process_data.py
@@ -22,7 +22,7 @@ python 1_process_data.py
 The processed files are in `processed_data`
 The following are descriptions of some fields
 * **doc**: original document
-* **doc_with_sent_aspect**: aspect with each sentence
+* **doc_with_sent_aspect**: aspects with each sentence
 * **sent_controlled_doc**: `[label1, label2, ... ]`, per-sentence label sequence for the meta-review     where `label1` represents the category label for 1st sentence, `label2` for the 2nd sentence and so on
 * **seg_controlled_doc**: `[label1, label2, ... ]`, label sequence for the meta-review on segment level where `label1` represents the category label for 1st segment (the sentences of the same label), `label2` for the 2nd segment and so on
 * **summary**: Summary of the document
@@ -33,7 +33,7 @@ The following are descriptions of some fields
 ## Training and Evaluation
 The training and evaluation codes are in `3_run_our_idea.py`, you can change the `pretrained_model_path` to replace different pre-trained models, and compare the learning effects of different models.
 
-## case study
+## Case Study
 If you want to see the effect of different aspect learning, you can run `case_study.py`
 
 ## Cite Us
