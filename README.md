@@ -1,7 +1,7 @@
 # AspectSum
-Implementation of the paper Supervised Aspect Learning for Abstractive Multi-Document Summarization.
+The source code of the paper [SALAS: Supervised Aspect Learning Improves Abstractive Multi-document Summarization Through Aspect Information Loss](https://link.springer.com/chapter/10.1007/978-3-031-43421-1_4).
 
-## Required Packages
+## Requirements
 * Python (tested on 3.8.13)
 * CUDA (tested on 11.4)
 * [PyTorch](http://pytorch.org/) (tested on 1.8.0)
@@ -10,17 +10,17 @@ Implementation of the paper Supervised Aspect Learning for Abstractive Multi-Doc
 * tqdm
 
 ## Datasets
-The [MRED](https://arxiv.org/abs/2110.07474) dataset can be downloaded following the instructions at https://github.com/Shen-Chenhui/MReD
-The [WikiAsp](https://arxiv.org/abs/2011.07832) dataset can be downloaded following the instructions at https://github.com/neulab/wikiasp
+The [MRED](https://arxiv.org/abs/2110.07474) dataset can be downloaded from https://github.com/Shen-Chenhui/MReD
+The [WikiAsp](https://arxiv.org/abs/2011.07832) dataset can be downloaded from https://github.com/neulab/wikiasp
 
 
 ## Data Processing
-First, you should prepare the data and place them in the `raw_data`. Next process the data 
+First, place the data in `raw_data`. Next, processing the data by
 ```bash
 python 1_process_data.py
 ```
-The processed files are in `processed_data`
-The following are descriptions of some fields
+The processed files are stored in `processed_data`.
+Here are some descriptions.
 * **doc**: original document
 * **doc_with_sent_aspect**: aspects with each sentence
 * **sent_controlled_doc**: `[label1, label2, ... ]`, per-sentence label sequence for the meta-review     where `label1` represents the category label for 1st sentence, `label2` for the 2nd sentence and so on
@@ -31,9 +31,7 @@ The following are descriptions of some fields
 * **sample_id**: `yyyy-id`, where `yyyy` is the year
 
 ## Training and Evaluation
-The training and evaluation codes are in `3_run_our_idea.py`, you can change the `pretrained_model_path` to replace different pre-trained models, and compare the learning effects of different models.
+The training and evaluation are executed by `3_run_our_idea.py`, you can replace the `pretrained_model_path` to use different pre-trained models.
 
 ## Case Study
-If you want to see the effect of different aspect learning, you can run `case_study.py`
-
-## Cite Us
+Our implementation of the case study is in `case_study.py`.
